@@ -1,7 +1,6 @@
 import random
 
 def play_random(n):
-    # using 0-99 instead of ranges 1-100
     pardoned = 0
     in_drawer = list(range(100))
     sampler = list(range(100))
@@ -19,4 +18,4 @@ def play_random(n):
                 break
         if found:
             pardoned += 1
-    return pardoned / n * 100   # %
+    return pardoned / n * 100
